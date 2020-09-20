@@ -1,0 +1,26 @@
+{
+  "name": "timezonehelper",
+  "version": "1.0.0",
+  "description": "app to see the time in nz time zone and br timezone",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzotriches/TimezoneHelper.git"
+  },
+  "author": "Enzo Trichês",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enzotriches/TimezoneHelper/issues"
+  },
+  "homepage": "https://github.com/enzotriches/TimezoneHelper#readme",
+  "devDependencies": {
+    "electron": "^10.1.2"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.31"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time Zone Helper - NZ | BR</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+    <body>
+        <div class="main-clock">
+            <div class="clock" id="nz-clock">   
+                <img src="https://img.icons8.com/color/48/000000/new-zealand-circular.png"/>    
+                <h1 id="nz-clock-show">. . .</h1>
+            </div>
+            <div class="clock" id="br-clock">
+                <img src="https://img.icons8.com/color/48/000000/brazil-circular.png"/>
+                <h1 id="br-clock-show">. . .</h1>
+            </div>
+        </div>   
+        <script>
+            function handleTimes(){
+                var moment = require('moment-timezone');
+                var nz_time = moment().tz("Pacific/Auckland").format('DD/MM/YY HH:mm:ss');
+                var br_time = moment().tz("America/Sao_Paulo").format('DD/MM/YY HH:mm:ss');
+
+                document.getElementById('nz-clock-show').innerHTML = nz_time;
+                document.getElementById('br-clock-show').innerHTML = br_time;
+                setTimeout(handleTimes, 500);
+            }
+            handleTimes()
+        </script>
+    </body>
+</html>
