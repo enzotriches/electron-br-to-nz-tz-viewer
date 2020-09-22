@@ -7,4 +7,6 @@ Two clocks, one from New Zealand and other from Brazil.
   3. Navigate into the folder created and run ``npm install``
   4. Run ``npm start``
   5. Have fun :sparkles: :frog:
+ 
+>Access [Moment Timezone](https://momentjs.com/timezone/) and add more places :)
   
